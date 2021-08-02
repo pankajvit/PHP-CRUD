@@ -5,7 +5,7 @@
     $db='curdyoutube';
     $con=mysqli_connect($server,$username,$password,$db);
     
-    if($db){
+    if($con){
         ?>
             <script>
                 alert('Connection successful');
