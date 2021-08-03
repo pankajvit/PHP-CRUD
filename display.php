@@ -46,9 +46,9 @@
     <td> <?php echo $res['mobile'];  ?> </td>
     <td> <?php echo $res['degree'];  ?> </td>
     <td> <?php echo $res['address'];  ?> </td>
-    <td><i class="far fa-edit"></i></td>
-    <td><i class="far fa-trash-alt"></i></td>
-  </tr>
+    <td><a href="updates.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="Update"><i class="far fa-edit"></i></a></td>
+    <td><a href="" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="far fa-trash-alt"></i></a></td>
+ </tr>
  </tbody>
  <?php 
  }
@@ -59,12 +59,12 @@
  </div>
 
  <script type="text/javascript">
- 
  $(document).ready(function(){
  $('#tabledata').DataTable();
- }) 
- 
+ })
+ $(document).ready(function(){
+   $('[data-toggle="tooltip"]').tooltip();
+ });
  </script>
-
 </body>
 </html>
