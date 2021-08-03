@@ -47,8 +47,8 @@
     <td> <?php echo $res['degree'];  ?> </td>
     <td> <?php echo $res['address'];  ?> </td>
     <td><a href="updates.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="Update"><i class="far fa-edit"></i></a></td>
-    <td><a href="" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="far fa-trash-alt"></i></a></td>
- </tr>
+    <td><a href="delete.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="far fa-trash-alt"></i></a></td>
+  </tr>
  </tbody>
  <?php 
  }
